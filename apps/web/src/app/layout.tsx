@@ -1,3 +1,4 @@
+import { ReduxProvider } from '@/store/provider';
 import './index.css';
 export const metadata = {
   title: 'Welcome to web',
@@ -11,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ReduxProvider>{children}</ReduxProvide>
+      </body>
     </html>
   );
 }

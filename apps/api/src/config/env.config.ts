@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import { envSchema } from '../validations';
 
 const nodeEnv = process.env.NODE_ENV || 'development';
+
 const envPath = path.resolve(process.cwd(), `.env.${nodeEnv}`);
 
 dotenv.config({ path: envPath });

@@ -1,7 +1,8 @@
 import express from 'express';
+import { env } from './config';
 
-const host = process.env.HOST ?? 'localhost';
-const port = process.env.PORT ? Number(process.env.PORT) : 3000;
+const host = env.HOST;
+const port = env.PORT;
 
 const app = express();
 

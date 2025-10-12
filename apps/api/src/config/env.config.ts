@@ -10,8 +10,7 @@ dotenv.config({ path: envPath });
 const parsedEnv = envSchema.safeParse(process.env);
 
 if (!parsedEnv.success) {
-  console.error('\n❌ Invalid environment configuration:\n');
-  console.error(parsedEnv.error.format());
+  console.error('Invalid environment variables', parsedEnv.error.format());
   process.exit(1);
 }
 

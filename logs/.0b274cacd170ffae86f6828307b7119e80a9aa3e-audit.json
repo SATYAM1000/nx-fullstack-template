@@ -1,0 +1,15 @@
+{
+  "keep": {
+    "days": true,
+    "amount": 2
+  },
+  "auditLog": "/Users/satyamx55/Desktop/Personal/nx-template/logs/.0b274cacd170ffae86f6828307b7119e80a9aa3e-audit.json",
+  "files": [
+    {
+      "date": 1760294941296,
+      "name": "/Users/satyamx55/Desktop/Personal/nx-template/logs/2025-10-13.log",
+      "hash": "59ba58312cab8106da77548ab24db869ed1d787e2fcecc84ee2036b031d0338f"
+    }
+  ],
+  "hashType": "sha256"
+}

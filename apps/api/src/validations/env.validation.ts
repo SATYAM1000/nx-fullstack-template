@@ -1,6 +1,7 @@
 import { z } from 'zod';
 
 export const envSchema = z.object({
+  HOST: z.string().min(1, 'HOST is required'),
   NODE_ENV: z.enum(['development', 'test', 'production', 'staging']).default('development'),
   PORT: z.coerce.number().default(4000),
   MONGO_URI_MAIN: z.string().refine((value) => z.url().safeParse(value).success, {

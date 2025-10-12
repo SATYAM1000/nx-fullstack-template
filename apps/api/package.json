@@ -98,10 +98,14 @@
     }
   },
   "dependencies": {
+    "colorette": "^2.0.20",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "helmet": "^8.1.0",
+    "winston": "^3.18.3",
+    "winston-daily-rotate-file": "^5.0.0",
+    "winston-mongodb": "^7.0.1",
     "zod": "^4.1.12"
   },
   "devDependencies": {

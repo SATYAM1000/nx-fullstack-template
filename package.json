@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
     "dev": "npx nx run-many -t serve -p web api",
     "dev:web": "npx nx serve web",
     "dev:api": "npx nx serve api",

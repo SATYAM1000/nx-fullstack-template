@@ -1,5 +1,7 @@
-import { ReduxProvider } from '@/store/provider';
+import React from 'react';
 import './index.css';
+
+import { ReduxProvider, ReactQueryProvider } from '@/providers';
 
 export const metadata = {
   title: 'Nx template',
@@ -10,7 +12,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <ReduxProvider>{children}</ReduxProvider>
+        <ReactQueryProvider>
+          <ReduxProvider>{children}</ReduxProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );

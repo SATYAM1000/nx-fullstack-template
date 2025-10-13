@@ -6,9 +6,9 @@
   "auditLog": "/Users/satyamx55/Desktop/Personal/nx-template/logs/.0b274cacd170ffae86f6828307b7119e80a9aa3e-audit.json",
   "files": [
     {
-      "date": 1760352994264,
+      "date": 1760353730384,
       "name": "/Users/satyamx55/Desktop/Personal/nx-template/logs/2025-10-13.log",
-      "hash": "51db3be9773f62782a4df5b5575a9c3071c4aa919342449b25abf680a21819b9"
+      "hash": "54be5d18dd445bd38af1837daa9863bf2a6a1617387ed5cfb906e12c2d1d336e"
     }
   ],
   "hashType": "sha256"

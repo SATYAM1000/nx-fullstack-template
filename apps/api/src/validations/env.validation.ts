@@ -19,6 +19,8 @@ export const envSchema = z.object({
   REDIS_PORT: z.string().min(1, 'REDIS_PORT is required'),
   REDIS_USERNAME: z.string().min(1, 'REDIS_USERNAME is required'),
   REDIS_PASSWORD: z.string().min(1, 'REDIS_PASSWORD is required'),
+
+  FRONTEND_URL: z.string().min(1, 'FRONTEND_URL is required'),
 });
 
 export type Env = z.infer<typeof envSchema>;

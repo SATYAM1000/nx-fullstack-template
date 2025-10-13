@@ -25,6 +25,7 @@ export default [
         module: 'readonly',
         require: 'readonly',
         Buffer: 'readonly',
+        global: 'readonly',
         setTimeout: 'readonly',
         clearTimeout: 'readonly',
         setInterval: 'readonly',

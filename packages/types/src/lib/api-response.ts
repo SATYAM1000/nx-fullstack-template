@@ -1,5 +1,5 @@
-export type ApiSuccessResponse = {
-  success: boolean;
+export type ApiSuccessResponse<T = unknown> = {
+  success: true;
   statusCode: number;
   request: {
     ip?: string | null;
@@ -7,11 +7,11 @@ export type ApiSuccessResponse = {
     url: string;
   };
   message: string;
-  data: unknown;
+  data: T;
 };
 
-export type ApiErrorResponse = {
-  success: boolean;
+export type ApiErrorResponse<T = unknown> = {
+  success: false;
   statusCode: number;
   request: {
     ip?: string | null;
@@ -19,8 +19,8 @@ export type ApiErrorResponse = {
     url: string;
   };
   message: string;
-  data: unknown;
+  data: T;
   trace?: object | null;
 };
 
-export type ApiResponse = ApiSuccessResponse | ApiErrorResponse;
+export type ApiResponse<T = unknown> = ApiSuccessResponse<T> | ApiErrorResponse<T>;

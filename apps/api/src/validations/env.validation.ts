@@ -14,6 +14,11 @@ export const envSchema = z.object({
   AWS_SECRET_ACCESS_KEY: z.string().min(1, 'AWS_SECRET_ACCESS_KEY is required'),
   AWS_S3_BUCKET_NAME: z.string().min(1, 'AWS_S3_BUCKET_NAME is required'),
   AWS_S3_BUCKET_REGION: z.string().min(1, 'AWS_S3_BUCKET_REGION is required'),
+
+  REDIS_HOST: z.string().min(1, 'REDIS_HOST is required'),
+  REDIS_PORT: z.string().min(1, 'REDIS_PORT is required'),
+  REDIS_USERNAME: z.string().min(1, 'REDIS_USERNAME is required'),
+  REDIS_PASSWORD: z.string().min(1, 'REDIS_PASSWORD is required'),
 });
 
 export type Env = z.infer<typeof envSchema>;

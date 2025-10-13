@@ -21,6 +21,7 @@ export const envSchema = z.object({
   REDIS_PASSWORD: z.string().min(1, 'REDIS_PASSWORD is required'),
 
   FRONTEND_URL: z.string().min(1, 'FRONTEND_URL is required'),
+  API_PREFIX: z.string().min(1, 'API_PREFIX is required'),
 });
 
 export type Env = z.infer<typeof envSchema>;

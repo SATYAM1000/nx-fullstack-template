@@ -12,6 +12,7 @@ import {
   routeNotFoundMiddleware,
   validateJsonMiddleware,
 } from './middlewares';
+import { registerRoutes } from './routes';
 
 const app = express();
 
@@ -36,6 +37,8 @@ app.use(
 );
 
 app.use(requestLoggerMiddleware);
+
+registerRoutes(app);
 
 app.use(routeNotFoundMiddleware);
 

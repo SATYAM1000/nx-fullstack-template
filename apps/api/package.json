@@ -98,12 +98,16 @@
     }
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.908.0",
     "colorette": "^2.0.20",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-rate-limit": "^5.5.1",
     "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
     "ioredis": "^5.8.1",
     "mongoose": "^8.19.1",
     "winston": "^3.18.3",

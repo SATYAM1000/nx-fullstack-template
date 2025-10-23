@@ -5,8 +5,8 @@
   "scripts": {
     "setup": "bash scripts/setup.sh",
     "setup:windows": "powershell -ExecutionPolicy Bypass -File scripts/setup.ps1",
-    "dev": "npx nx run-many -t serve -p web api",
-    "dev:web": "npx nx serve web",
+    "dev": "npx nx run-many -t dev,serve -p web,api",
+    "dev:web": "npx nx dev web",
     "dev:api": "npx nx serve api",
     "build": "npx nx run-many -t build",
     "build:web": "npx nx build web",
